@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project 1 - Team5</title>
+ <!-- link to Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- link to font-awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- link to css file-->
+<link rel="stylesheet" href="style.css">
+  
+<body>
+  <div class="Jumbotron col-lg-2 offset-lg-2 col-sm-12" id="header">
+    Find a home for my Pokemon
+	</div>
+<!-- form which user can enter the Pokemon they have/want-->
+<div class="card-body" id="userBody"">
+    <form class="form">
+        <div class="form-group">
+            <label for="pokemonInput"><b>Name of Pokemon</b></label>
+                <input class="form-control" id="pokemonInput">
+
+    <form class="form">
+        <div class="form-group">
+            <label for="startLong"><b>start longitude </b></label>
+                <input class="form-control" id="startLong">
+            <label for="endtLong"><b>end longitude </b></label>
+                <input class="form-control" id="endtLong">
+
+    <form class="form">
+        <div class="form-group">
+            <label for="startlatitude"><b>start latitude </b></label>
+                <input class="form-control" id="startlatitude">
+            <label for="endlatitude"><b>end latitude </b></label>
+                <input class="form-control" id="endlatitude">
+    <br>
+    <button type="button" class="btn btn-success offset-5" id="addPokemon">
+        <i class="fa fa-search"></i> Search
+    </button>
+		</form>
+</div>
+
+<!-- Display the Pokemon-->
+<div class="card-body col-lg-2 col-sm-12">
+<a><img src=""  id="pokemonProfile"></a>
+</div>
+
+<!-- Display the place the Pokemon should live-->
+<div class="card-body col-lg-2 col-sm-12">
+ <p id="habitat"></p> <!-- Name of Habitat-->
+ <div id="map"> <!-- Map of location-->
+
+ </div>                                        
+</div>
+             
+                                             
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- link to js file-->
+<script src=""></script>
+</body>
+</html>
