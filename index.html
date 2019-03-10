@@ -9,55 +9,65 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- link to css file-->
 <link rel="stylesheet" href="style.css">
-  
+</head>
 <body>
-  <div class="Jumbotron col-lg-2 offset-lg-2 col-sm-12" id="header">
-    Find a home for my Pokemon
-	</div>
+<div class="container-fluid" id="header">
+    <img  class="img-fluid" src="image/header.png" id="headerimg">
+ </div>
+
+<div  class="row">
+<!-- Display the Pokemon, grap from API based on user input-->
+<div class="card-body container-fluid col-lg-4 col-sm-12" id="pokemonProfile">
+    <img class="img-fluid" src="image/Ditto.JPG" id="pokemonProfilePic">
+</div>
+
+
+<div class="card-body container-fluid col-lg-6 col-m-6  col-sm-12">
+    <div id="nameContainer">
+        <img  src="image/pokenameheader.png"  class="img-fluid" id="userBodyImg"> 
+        <!-- user input pokemon from line 32 will display here-->
+        <div class="name">Name</div>
+    </div>
 <!-- form which user can enter the Pokemon they have/want-->
-<div class="card-body" id="userBody"">
+<div id="userBody">
     <form class="form">
-        <div class="form-group">
-            <label for="pokemonInput"><b>Name of Pokemon</b></label>
-                <input class="form-control" id="pokemonInput">
-
-    <form class="form">
-        <div class="form-group">
-            <label for="startLong"><b>start longitude </b></label>
-                <input class="form-control" id="startLong">
-            <label for="endtLong"><b>end longitude </b></label>
-                <input class="form-control" id="endtLong">
-
-    <form class="form">
-        <div class="form-group">
-            <label for="startlatitude"><b>start latitude </b></label>
-                <input class="form-control" id="startlatitude">
-            <label for="endlatitude"><b>end latitude </b></label>
-                <input class="form-control" id="endlatitude">
-    <br>
-    <button type="button" class="btn btn-success offset-5" id="addPokemon">
+        <label for="pokemonInput"><b>Name of Pokemon</b></label>
+            <input class="form-control" id="pokemonInput">
+        <label for="area"><b>Search for a good area </b></label>
+            <input class="form-control" id="startLong">
+            <br>
+     <button type="button" class="btn btn-danger offset-5" id="addPokemon">
         <i class="fa fa-search"></i> Search
-    </button>
-		</form>
+     </button>
+	</form>
+</div>
 </div>
 
-<!-- Display the Pokemon-->
-<div class="card-body col-lg-2 col-sm-12">
-<a><img src=""  id="pokemonProfile"></a>
+<!-- Name of Habitat-->
+<div class="card-body container-fluid col-lg-4 col-sm-12" id="habitat_div">
+        <p id="habitat">Urban</p> 
 </div>
 
-<!-- Display the place the Pokemon should live-->
-<div class="card-body col-lg-2 col-sm-12">
- <p id="habitat"></p> <!-- Name of Habitat-->
- <div id="map"> <!-- Map of location-->
 
- </div>                                        
-</div>
-             
-                                             
+<div class= "card-body container-fluid col-lg-6 col-sm-12"> 
+        <img  src="image/map.png" class="img-fluid" id="mapBodyImg"> 
+   
+   
+<!-- Display the place the Pokemon should live--> <!-- Map of location-->
+        <div class= "card-body container-fluid col-lg-12 col-sm-12"" > 
+            <img src ="image/mapSample.JPG" class= "img-fluid" id="map" >
+            <img src="image/pointer.png" id="pointer">
+        </div>
+   
+   </div>
+
+
+
+</div>                 
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- link to js file-->
 <script src=""></script>
+
 </body>
 </html>
