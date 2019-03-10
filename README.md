@@ -9,7 +9,7 @@ based on user input (name of Pokemon)
 
 
 
-*Pokemon                Google search term*
+*Pokemon                TomTom search term*
 Cave    =               Escape Room
 Forest    =             Botonical  
 Mountain    =           
