@@ -1,5 +1,5 @@
 (function pokemonData(){
-    function test(pokemonName){
+    function pokemonFunction(pokemonName){
         $.ajax({
             url: 'https://pokeapi.co/api/v2/pokemon-species/' + pokemonName , 
             method: 'GET'
