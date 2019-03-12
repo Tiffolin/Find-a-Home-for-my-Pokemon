@@ -70,7 +70,7 @@ body{
    }
 
 
-#habitat_div{
+.habitat_div{
     background-color:white;
     border:solid 4px black;
     border-radius: 25px;
@@ -79,12 +79,8 @@ body{
     font-size:30px;
     font-weight:bold;
     height: 60px;
-}
-
-#habitat{
-    border-radius: 25px;
-    border-left: solid 50px #FF8080;
-    border-right:solid 50px #FF8080;
+    border-left: solid 5px #FF8080;
+    border-right:solid 5px #FF8080;
 }
 
 
