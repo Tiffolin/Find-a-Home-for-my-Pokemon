@@ -9,6 +9,7 @@ based on user input (name of Pokemon)
 
 
 
+
 *Pokemon                TomTom search term*
 Cave    =               Escape Room
 Forest    =             Botonical  
@@ -18,6 +19,3 @@ rough-terrain  =        Fitness
 sea    =                Harbour
 urban    =              City center/ Shopping Mall
 waters-edge =           Beach
-
-
-
