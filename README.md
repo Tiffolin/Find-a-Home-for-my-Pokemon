@@ -9,15 +9,13 @@ based on user input (name of Pokemon)
 
 
 
-*Pokemon                 Google search term*
-Cave    =
-Forest    =
-Mountain    =
-Rare    =
-rough-terrain    =
-sea    =
-urban    =
-waters-edge =
 
-
-
+*Pokemon                TomTom search term*
+Cave    =               Escape Room
+Forest    =             Botonical  
+Mountain    =           
+Rare    =               Attraction
+rough-terrain  =        Fitness
+sea    =                Harbour
+urban    =              City center/ Shopping Mall
+waters-edge =           Beach

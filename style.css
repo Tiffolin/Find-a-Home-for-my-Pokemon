@@ -102,3 +102,11 @@ body{
 
 }
 
+#pointer{
+    display: none;
+    position: absolute;
+    text-align: center;
+    bottom: 45%;
+    left:45%;
+  }
+
