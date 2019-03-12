@@ -18,7 +18,7 @@
 <div  class="row">
 <!-- Display the Pokemon, grap from API based on user input-->
 <div class="card-body container-fluid col-lg-4 col-sm-12" id="pokemonProfile">
-    <img class="img-fluid" src="image/Ditto.JPG" id="pokemonProfilePic">
+    <img class="img-fluid" src="" id="pokemonProfilePic">
 </div>
 
 
@@ -26,15 +26,14 @@
     <div id="nameContainer">
         <img  src="image/pokenameheader.png"  class="img-fluid" id="userBodyImg"> 
         <!-- user input pokemon from line 32 will display here-->
-        <div class="name">Name</div>
+        <div class="name"></div>
     </div>
 <!-- form which user can enter the Pokemon they have/want-->
 <div id="userBody">
     <form class="form">
         <label for="pokemonInput"><b>Name of Pokemon</b></label>
             <input class="form-control" id="pokemonInput">
-        <label for="area"><b>Search for a good area </b></label>
-            <input class="form-control" id="startLong">
+
             <br>
      <button type="button" class="btn btn-danger offset-5" id="addPokemon">
         <i class="fa fa-search"></i> Search
@@ -44,8 +43,10 @@
 </div>
 
 <!-- Name of Habitat-->
-<div class="card-body container-fluid col-lg-4 col-sm-12" id="habitat_div">
-        <p id="habitat">Urban</p> 
+<div class="card-body container-fluid col-lg-6 col-sm-12">
+        <p class="card-body container-fluid habitat_div"" id="habitat"></p> 
+        <p class="card-body container-fluid habitat_div"" id="locationName"></p>
+        <p class="card-body container-fluid habitat_div"" id="address"></p>  
 </div>
 
 
@@ -54,7 +55,6 @@
    
    
 <!-- Display the place the Pokemon should live--> <!-- Map of location-->
-
         <div class= "card-body container-fluid col-lg-12 col-sm-12"" > 
             <img src ="image/mapSample.JPG" class= "img-fluid" id="map" >
             <img src="image/pointer.png" id="pointer">
