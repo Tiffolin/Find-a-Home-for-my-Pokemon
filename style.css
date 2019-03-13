@@ -67,6 +67,7 @@ body{
 /* Image of user inputted pokemon will go, referenced via pokemon API*/
 #pokemonProfilePic{
     border-radius: 25px;
+    text-align:center;
    }
 
 
@@ -81,6 +82,10 @@ body{
     height: 60px;
     border-left: solid 5px #FF8080;
     border-right:solid 5px #FF8080;
+}
+
+#mapDiv{
+    text-align:center;
 }
 
 
@@ -102,7 +107,7 @@ body{
     display: none;
     position: absolute;
     text-align: center;
-    bottom: 45%;
+    bottom: 50%;
     left:45%;
   }
 
