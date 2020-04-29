@@ -75,7 +75,7 @@
                                         break;
     
                                     case "mountain":
-                                        keyword = "sports";
+                                        keyword = "bouldering";
                                         break;
     
                                     case "rare":
@@ -116,7 +116,7 @@
 
                                         var placeName = mapJson.results[0].poi.name;
                                         if ((mapJson.results[0].address.streetNumber != null) && (mapJson.results[0].address.streetName != null)) {
-                                            var placeAddress = mapJson.results[0].address.streetNumber + mapJson.results[0].address.streetName;
+                                            var placeAddress = mapJson.results[0].address.streetNumber + "  " + mapJson.results[0].address.streetName;
                                         } else {
                                             var placeAddress = "Not Available"
                                         }
@@ -126,11 +126,6 @@
                                         var minlat = mapJson.results[0].viewport.btmRightPoint.lat;
                                         var minlon = mapJson.results[0].viewport.topLeftPoint.lon;
         
-                                        console.log(minlon);
-                                        console.log(minlat);
-                                        console.log(maxlon);
-                                        console.log(maxlat);
-
                                         //Set the HTML elements to change according to the new information
         
                                         //set the img tag's src to the map api's site with the coordinates, change the pokemon picture and show the pointer.
@@ -139,9 +134,10 @@
                                         $("#map").attr("src", mapurl)
                                         $("#pointer").show();
                                         $("#pokemonProfilePic").attr("src", "image/gen1/" + pokemonName + ".png")
-                                        
-                                        //TO BE DONE:
-                                        //1) Incorporate the name and/or address of the final location into an element
+                                        $("#habitat").html("Habitat: " + habitat.charAt(0).toUpperCase() + habitat.slice(1));
+                                        $("#locationName").html("Name: " + placeName);
+                                        $("#address").html("Address: " + placeAddress);
+                                        $(".name").html(pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1));
                                         
                                     });
     
