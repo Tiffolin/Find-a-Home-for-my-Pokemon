@@ -1,4 +1,4 @@
-# Find a Home for your Pokemon
+# Find a Home for your Pokémon
 
 What is it?
 The purpose of our webpage is to find the nearest place near you that would suit a Pokémon.
@@ -9,11 +9,12 @@ This is a fun website where Pokémon fans can find where their favorite Pokémon
 
 ![](screenshot/1.PNG)      
 
+## Mobile Responsive
 ![](screenshot/2.PNG)      
 
 
 # How Does it work
-Based on user input (name of Pokemon):
+Based on user input (name of Pokémon):
 
 1. Reference the Pokemon API and return the Pokemon's image, name and habitat
 2. Take the value of habitat and interpret it into our own search terms that aligns with google's search API
@@ -22,7 +23,7 @@ Based on user input (name of Pokemon):
 
 Habitat	Keyword
 
-| ------------- |:-------------:| 
+|-----------------------|-------------| 
 | Cave                  | Escape Room |
 | Forest/Grasslands     | Botanical   |   
 | Mountain              | Bouldering  |  
@@ -33,10 +34,11 @@ Habitat	Keyword
 | Waters-edge           | Beach       |   
 
 
+---
 
-## Live Site
-https://tiffolin.github.io/Find-a-Home-for-my-Pokemon/
+Live Site can be found [Here](https://tiffolin.github.io/Find-a-Home-for-my-Pokemon/)
 
+---
 ## Authors
 * **Tiffany Lin**         [Tiffolin](https://github.com/Tiffolin)
 
@@ -44,6 +46,6 @@ https://tiffolin.github.io/Find-a-Home-for-my-Pokemon/
 * **4l3x1s**              [4l3x1s](4l3x1s)
 * **Antoine Asselin**     [lebattebleu](https://github.com/Tiffolin)
 
-
+---
 ## License
 MIT
