@@ -7,10 +7,10 @@ By parsing through the various locations in a typical city, we have created a si
 
 This is a fun website where Pokémon fans can find where their favorite Pokémon may flourish in real life. Which fan would not want that?
 
-![](screenshot/1.PNG)      
+![](screenshot/1.png)      
 
-## Mobile Responsive
-![](screenshot/2.PNG)      
+### Mobile Responsive
+![](screenshot/2.png)      
 
 
 # How Does it work
@@ -21,17 +21,18 @@ Based on user input (name of Pokémon):
 3. Cross-reference the habitat with the translated search term with the Google API and return a habitat result on the page.
 4. Display the map of the habitat location on the web.
 
-Habitat	Keyword
 
-|-----------------------|-------------| 
-| Cave                  | Escape Room |
-| Forest/Grasslands     | Botanical   |   
-| Mountain              | Bouldering  |  
-| Rare                  | Attraction  |
-| Rough-terrain         | centered    |   
-| Sea	Rigging         | Fitness     |  
-| Urban                 | City Center |
-| Waters-edge           | Beach       |   
+
+| Habitat | Keyword |
+| --- | --- | 
+| Cave |Escape Room|
+| Forest/Grasslands |Botanical|   
+| Mountain | Bouldering  |  
+| Rare | Attraction |
+| Rough-terrain | centered |   
+| Sea Rigging  | Fitness   
+| Urban | City Center |
+| Waters-edge | Beach |   
 
 
 ---
