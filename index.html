@@ -1,77 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Find a Home for My Pokémon</title>
- <!-- link to Bootstrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<!-- link to font-awesome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- link to css file-->
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- link to font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link to css file-->
+    <link rel="stylesheet" href="style.css">
+    <title>Find a Home for My Pokémon</title>
 </head>
 <body>
-<div class="container-fluid" id="header">
-    <img  class="img-fluid" src="image/header.png" id="headerimg">
- </div>
-
-<div  class="row">
-<!-- Display the Pokemon, grap from API based on user input-->
-<div class="card-body container-fluid col-lg-4 col-sm-12" id="pokemonProfile">
-    <img class="img-fluid" src="" id="pokemonProfilePic">
-</div>
-
-
-<div class="card-body container-fluid col-lg-6 col-m-6  col-sm-12">
-    <div id="nameContainer">
-        <img  src="image/pokenameheader.png"  class="img-fluid" id="userBodyImg"> 
-        <!-- user input pokemon from line 32 will display here-->
-        <div class="name"></div>
+<!-- SplashPage     -->  
+<div id="splash">
+    <div id="introContainer" class="d-flex justify-content-center">
+        <img id="logo" src="image/splash.PNG">
     </div>
-<!-- form which user can enter the Pokemon they have/want-->
-<div id="userBody">
-    <form class="form">
-        <label for="pokemonInput"><b>Name of Pokémon</b></label>
-            <input class="form-control" id="pokemonInput">
-
-            <br>
-     <button type="button" class="btn btn-danger offset-5" id="addPokemon">
-        <i class="fa fa-search"></i> Search
-     </button>
-	</form>
-</div>
-</div>
-
-<!-- Name of Habitat-->
-<div class="card-body container-fluid col-lg-6 col-sm-12">
-        <p class="card-body container-fluid habitat_div" id="habitat"></p> 
-        <p class="card-body container-fluid habitat_div" id="locationName"></p>
-        <p class="card-body container-fluid habitat_div" id="address"></p>  
-</div>
-
-
-<div class= "card-body container-fluid col-lg-6 col-sm-12"> 
-        <img  src="image/map.png" class="img-fluid" id="mapBodyImg"> 
-   
-   
-<!-- Display the place the Pokemon should live--> <!-- Map of location-->
-        <div class= "card-body container-fluid col-lg-12
-         col-sm-12" > 
-            <img src ="image/mapSample.JPG" class= "img-fluid" id="map" >
-            <img src="image/pointer.png" id="pointer">
-
+    <div id="subtextContainer"class="d-flex justify-content-center">
+        <div id="subtext">
+            <p>Only applicable to Pokémon 1st Generation</p>
+            <p>Enter your Pokémon in the Search bar below, then click search</p>
         </div>
-   
-   </div>
+    </div>  
+        <div  id="arrowContainer" class="d-flex justify-content-center">
+            <img id="arrow" src="image/pointer2.png" class="bounce"></img>
+        </div>
+    
+</div>
+<!-- Header    -->
+<!-- <div id="header"> 
+    <span><img id="logo2" class="img-fluid" src="image/pokebal.png"></span>
+</div> -->
+<div id="mainContainer" class="row">
 
+<!-- image and display name for Pokemon     -->
+<div class="col-lg-4 col-m-5 col-sm-12">
+    <div id="pokemonProfile" class="contentContainers card d-flex justify-content-center">
+    <!-- Search for Pokemon -->
+        <div id="userSearch" class="d-flex justify-content-center"> <!-- got to change the id in css file from userBody to userSearch -->
+            <form class="form-inline">
 
+                <input id="pokemonInput" class="form-control mr-sm-2" type="search" placeholder="Enter Pokemon's Name" aria-label="Search">
+                <button id="addPokemon" class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+        </div>
+    <!-- Image of Pokemon --> 
+        <div id="pokemonImgContainer" class="d-flex justify-content-center">
+            <img id="pokemonProfilePic" class="card-img-top img-fluid" src=" " alt="">
+        </div>
+        
+        <div id="nameContainer" class="card-body  ">
+            <!-- name of Pokemon will display here-->
+            <div class="name "></div>
+        </div>
+    </div>
+</div>
+<!-- Map -->
+<div class="col-lg-4 col-m-5 col-sm-12">
+    <div id="mapContainer" class="card " >
+        <img id="map" class= "contentContainers card-img-top" src ="image/mapSample.JPG" alt="Map" >
+        <!-- <img id="pointer" class= "card-img-top" src="image/pointer.png"> -->
 
+    </div>
+</div>
+<!-- Address -->
+<div class="col-lg-4 col-m-5 col-sm-12">
+    <div id="habitatContainer" class="contentContainers card " >
+        <ul class="list-group list-group-flush">
+        <li id="habitat" class="list-group-item"></li>
+        <li id="locationName" class="list-group-item"></li>
+        <li id="address" class="list-group-item"></li>
+        </ul>
+    </div>
+</div>
+</div>
 
-</div>                 
+<div id="footerContainer"class="page-footer d-flex justify-content-center">
+    <div id="footer"  >     
+        <div class="d-flex justify-content-center""><img id="logo2" class="img-fluid" src="image/pokebal.png">   </div>           
+        <div id="copyright" class="font-small">Find a Home for my Pokémon © 2020</div>
+    </div>
+</div>
+
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- link to js file-->
 <script src="app.js"></script>
 
+    
 </body>
-</html>
+</html>>

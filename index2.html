@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- link to font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link to css file-->
+    <link rel="stylesheet" href="style.css">
+    <title>Find a Home for My Pokémon</title>
+</head>
+<body>
+    <div id="header"> 
+        <img id="logo" class="img-fluid" src="image/header.png">
+    </div>
+<!-- Search for Pokemon -->
+    <div id="userSearch"> <!-- got to change the id in css file from userBody to userSearch -->
+        <form class="form">
+            <label for="pokemonInput"><b>Name of Pokémon</b></label>
+                <input class="form-control" id="pokemonInput">
+                <br>
+            <button type="button" class="btn btn-danger offset-5" id="addPokemon">
+                <i class="fa fa-search"></i> Search
+            </button>
+        </form>
+    </div>
+
+<!-- image and display name for Pokemon     -->
+<div id="pokemonProfile" class="card" style="width: 18rem;">
+    <img id="pokemonProfilePic" class="card-img-top" src=" " alt="Oh no! The Pokemon escaped!">
+    <div id="nameContainer" class="card-body container-fluid ">
+        <img  id="userBodyImg" src="image/pokenameheader.png"  class="img-fluid" >    
+        <div class="name"></div><!-- user input pokemon from line 32 will display here-->
+    </div>
+</div>
+
+<!-- map of habitat & address -->
+<div class="card" style="width: 18rem;">
+    <img id="map" class= "card-img-top" src ="image/mapSample.JPG" alt="Map" >
+    <img id="pointer" class= "card-img-top" src="image/pointer.png">
+    <div class="card-body">
+      <h5 class="card-title">MAP</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li id="habitat" class="list-group-item"></li>
+      <li id="locationName" class="list-group-item"></li>
+      <li id="address" class="list-group-item"></li>
+    </ul>
+</div>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- link to js file-->
+<script src="app.js"></script>
+
+    
+</body>
+</html>>

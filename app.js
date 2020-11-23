@@ -135,7 +135,7 @@
                                         $("#pointer").show();
                                         $("#pokemonProfilePic").attr("src", "image/gen1/" + pokemonName + ".png")
                                         $("#habitat").html("Habitat: " + habitat.charAt(0).toUpperCase() + habitat.slice(1));
-                                        $("#locationName").html("Name: " + placeName);
+                                        $("#locationName").html("Location Name: " + placeName);
                                         $("#address").html("Address: " + placeAddress);
                                         $(".name").html(pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1));
                                         
