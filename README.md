@@ -9,7 +9,6 @@ This is a fun website where Pokémon fans can find where their favorite Pokémon
 
 ![](screenshot/1.png)      
 
-### Mobile Responsive
 ![](screenshot/2.png)      
 
 

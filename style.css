@@ -143,10 +143,24 @@ html,body
         }
 /* Footer*/
 #footerContainer{
-background-color: white;
-opacity:0.8;
+    display:block;
+    background-color: white;
+    opacity:0.8;
 }
     #logo2{
         max-height: 50px;;
         max-width: 50px;
     }
+    #footer{
+        text-align:center;
+    }
+@media only screen and (max-width: 985) {
+    *{
+        overflow:auto;
+    }
+    #footerContainer {
+        background-color: white;
+        opacity: 0.8;
+        display: none!important;
+
+}
